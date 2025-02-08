@@ -1,13 +1,11 @@
 pipeline {
   agent any
-
   environment {
     acr_registryName = "hexxo"
     acr_registryUrl = "hexxo.azurecr.io"
     registryCredential = "ACR"
     dockerImage = ''
   }
-
   stages {
     stage('checkout') {
         steps {
